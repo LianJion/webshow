@@ -43,10 +43,10 @@
       var randomAngle = Math.random()*90 + 45;
       console.log(randomAngle);
       var randomX = Math.random()*1000+ 200;
-      var randomY = Math.random()*200 + 100;
+      var randomY = Math.random()*100 ;
       context.clearRect(0, 0, w, h);
       // clearCanvas();
-      drawTree(randomX, randomY, randomAngle, 5);
+      drawTree(randomX, randomY, randomAngle, 7);
     }
 
 
@@ -91,7 +91,7 @@
           //   context.fillRect(0, 0, w, h); 
           //   hasFired = true;
           // }
-        },500);
+        },250);
 
         // drawLine(x1,y1,x2,y2,depth);
         // if(!hasFired){
