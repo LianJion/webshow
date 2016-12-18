@@ -129,7 +129,7 @@ function draw() {
 
   branch({
     x: cw / 2-205,
-    y: ch / 2+111,
+    y: ch / 2+131,
     thickness: 2,
     width: 100,
     loss: 0.7,
