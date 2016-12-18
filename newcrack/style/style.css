@@ -1,0 +1,33 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#animationbutton{
+	position: absolute;
+	top: 0;
+}
+
+#change{
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+#animationstonebutton{
+  position: absolute;
+  left: 100px;
+}
+.ad-Container {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #050A42;
+  /*background-image: url("../images/stonebg.png");*/
+  /*background-repeat: no-repeat;*/
+}
