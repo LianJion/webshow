@@ -1,0 +1,43 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#animationbutton{
+	position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+input {
+  width: 80px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  font-family: "微软雅黑";
+  color: #4A2A16;
+}
+
+#change{
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+#animationstonebutton{
+  position: absolute;
+  left: 100px;
+}
+.ad-Container {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00326A;
+}

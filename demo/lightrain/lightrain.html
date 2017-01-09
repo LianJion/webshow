@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>light-rain-grass</title>
+  <style>
+    body {
+      background: #222;
+      margin: 0;
+      overflow: hidden;  
+    }
+    canvas {
+      position: absolute;
+    }
+    #animateLightningButton {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    input {
+      z-index: 10;
+      width: 80px;
+      height: 50px;
+      font-size: 20px;
+      border-radius: 5px;
+      border: none;
+      background: white;
+      font-family: "微软雅黑";
+      color: #4A2A16;
+    }
+    #animateRainButton {
+      position: absolute;
+      top: 10px;
+      left: 100px;
+    }
+    #animateGrassButton {
+      position: absolute;
+      top: 10px;
+      left: 190px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .cloud, .cloud_two {
+      z-index: 10;
+      animation: move 6s ease infinite;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      position: absolute;
+      top: 30%;
+      left: 20%;
+      margin-top: -30px;
+      margin-left: -30px;
+      background: #797D82;
+      height: 60px;
+      width: 60px;
+      box-shadow: #797D82 65px -15px 0 -5px,  #797D82 25px -25px,  #797D82 30px 10px,  #797D82 60px 15px 0 -10px,  #797D82 85px 5px 0 -5px;
+    }
+    .cloud_two {
+      top: 22%;
+      left: 61%;
+      animation-duration: 8s;
+    }
+    @keyframes move {
+      50% {
+        transform: translateY(-15px);
+        transform: translateX(15px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <script src="js/sketch.min.js" type="text/javascript"></script>
+  <script src="js/prefixfree.min.js"></script>
+    <div class='cloud'></div>
+    <div class='cloud_two'></div>
+    <input id='animateLightningButton' type='button' value='闪电'/>
+    <input id='animateRainButton' type='button' value='下雨'/>
+    <input id='animateGrassButton' type='button' value='生长'/>
+    <canvas id="canvas"></canvas>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/requestNextAnimationFrame.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
